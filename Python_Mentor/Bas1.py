@@ -19,7 +19,7 @@ class unknown:
         time.sleep(4)
         print("opened paytm")
         driver.close()
-
+        driver.quit()
 f1 = unknown()
 f1.g1()
 
