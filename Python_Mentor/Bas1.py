@@ -16,6 +16,8 @@ class unknown:
 
 f1 = unknown()
 f1.g1()
+o1=unknown()
+o1.g1()
 
 
 
