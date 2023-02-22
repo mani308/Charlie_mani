@@ -4,3 +4,4 @@ class tuesday:
     print("third noon")
     print("fourth noon")
     print("fifth noon")
+    print("sixth evng")
