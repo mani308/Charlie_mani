@@ -15,7 +15,7 @@ class unknown1:
         print(driver.title)
         driver.find_element(By.XPATH, "//button[@class='_2KpZ6l _2doB4z']").click()
         time.sleep(3)
-        driver.find_element(By.PARTIAL_LINK_TEXT,"Top Offers").click()
+        driver.find_element(By.LINK_TEXT,"Top Offers").click()
         time.sleep(3)
         print(driver.title)
 
