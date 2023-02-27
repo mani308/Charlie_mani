@@ -10,3 +10,10 @@ desired_cap = {
 text1 = "Welcome to"
 text2 = "Healthy eating made easy."
 text3 = "Join the nutrition revolution, starting with FoodWise."
+text4 = "Start For Free"
+
+text5 = "Allow PlatefulDev to take pictures and record video?"
+text6 = "While using the app"
+text7 = "Only this time"
+text8 = "Don’t allow"
+
