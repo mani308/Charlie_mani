@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 import pytest
 from Mob_Auto import locators
 from Mob_Auto import TestData
+
 desired_cap = {
   "platformName": "Android",
   "appium:deviceName": "emulator-5554",
@@ -11,10 +12,9 @@ desired_cap = {
   "appium:appWaitActivity": "com.opsis.primary.MainActivity",
   "appium:app": "/home/manikanta/Downloads/plateful-dev.apk"
 }
+driver = ""
 @pytest.mark.home1
-def test_opsys_p1():
-  driver= webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_cap)
-  driver.implicitly_wait(10)
+def test_opsys_p1(prere1):
   try:
    srt1=driver.find_element(By.XPATH,locators.ele1)
    R_tx1= srt1.text
@@ -42,4 +42,14 @@ def test_opsys_p3():
   except Exception as e:
     print(e)
   assert R_txt3 == TestData.text3
+
+
+
+
+
+
+
+
+
+
 
