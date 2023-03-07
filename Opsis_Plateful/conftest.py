@@ -14,9 +14,7 @@ def setup(request):
                 }
   driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_cap)
   driver.start_client()
-
-  time.sleep(5)
-
+  driver.implicitly_wait(10)
   request.cls.driver = driver
 
   yield
