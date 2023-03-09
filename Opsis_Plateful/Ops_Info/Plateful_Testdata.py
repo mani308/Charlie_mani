@@ -29,3 +29,21 @@ ECo_Value = "ECO\nVALUE"
 MoRe="More"
 
 
+HeLp = "Help"
+Welcome_To_Plateful = "Welcome to Plateful"
+How_It = "How It Works"
+FrequenT = "Frequently Asked Questions"
+Contact_Us = "Contact Us"
+SupporT = "Support"
+
+Data_Privacy = "Data Privacy"
+Terms_Conditions = "Terms & Conditions"
+Privacy_Policy = "Privacy Policy"
+Account = "Account"
+sign_IN = "Sign In"
+
+
+
+Sign_Up = "Sign Up"
+Log_In = "Log In"
+

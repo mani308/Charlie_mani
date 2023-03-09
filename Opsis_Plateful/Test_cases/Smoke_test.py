@@ -1,5 +1,6 @@
 import time
 
+from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.common.by import By
 from Opsis_Plateful.Ops_Info import Plateful_Testdata
 from Opsis_Plateful.Ops_Elements import Locators
@@ -8,6 +9,9 @@ class Smoky:
     def __init__(self , driver):
         self.driver = driver
 
+    def Scroller(self):
+        scroll=TouchAction(self.driver)
+        return scroll
     def verify_launch_page(self):
 #1
         try:
@@ -37,7 +41,6 @@ class Smoky:
                 try:
                     ops_health= self.driver.find_element(By.XPATH,Locators.health_intropage1).text
                     print(ops_health)
-                    print("hello")
                     assert ops_health == Plateful_Testdata.Healthy
                 except:
                     print("Healthy eating made easy. Text not matching")
@@ -45,21 +48,8 @@ class Smoky:
                 print("Healthy eating made easy element not displayed on the intro_screen1")
                 return False
 
-#4
-            #
-            # if self.driver.find_element(By.XPATH, Locators.join_the_nutrition).is_displayed():
-            #     print("Health note is displayed on the intro_screen1")
-            #     try:
-            #         ops_nutrition = self.driver.find_element(By.XPATH, Locators.join_the_nutrition).text
-            #         print(ops_nutrition)
-            #         assert ops_nutrition == Plateful_Testdata.join_nutrition
-            #     except:
-            #         print("Join the nutrition revolution, starting with FoodWise. Text not matching")
-            # else:
-            #     print("Join the nutrition revolution, starting with FoodWise. element not displayed on the intro_screen1")
-            #     return False
 
-#5
+
 
             if self.driver.find_element(By.XPATH, Locators.veggies_img).is_displayed():
                 print("Image with all the veggies and fruits are displayed on the intro_screen1")
@@ -73,7 +63,6 @@ class Smoky:
                 print("slider_button2 is displayed and is enabled on the intro_screen")
                 try:
                     self.driver.find_element(By.XPATH, Locators.slide_view2).click()
-                    time.sleep(1)
                 except:
                     print("slider_button2 is not clickable")
 
@@ -82,7 +71,6 @@ class Smoky:
                     print("slider_button3 is displayed and is enabled on the intro_screen")
                     try:
                         self.driver.find_element(By.XPATH, Locators.slide_view3).click()
-                        time.sleep(1)
                     except:
                         print("slider_button3 is not clickable")
                 else:
@@ -94,7 +82,6 @@ class Smoky:
                     print("slider button4 is displayed and is enabled on the intro_screen")
                     try:
                         self.driver.find_element(By.XPATH, Locators.slide_view4).click()
-                        time.sleep(1)
                     except:
                         print("slider_button4 is not clickable")
                 else:
@@ -175,7 +162,6 @@ class Smoky:
             if ((self.driver.find_element(By.XPATH, Locators.slide_view3).is_displayed()) & (self.driver.find_element(By.XPATH, Locators.slide_view3).is_enabled())):
                 try:
                     self.driver.find_element(By.XPATH, Locators.slide_view3).click()
-                    time.sleep(1)
                     if self.driver.find_element(By.XPATH, Locators.smarter).is_displayed():
                         print("Make smarter, science-backed choices text is displayed on the intro_screen3")
                         try :
@@ -222,7 +208,6 @@ class Smoky:
             if ((self.driver.find_element(By.XPATH, Locators.slide_view4).is_displayed()) & (self.driver.find_element(By.XPATH, Locators.slide_view4).is_enabled())):
                 try:
                     self.driver.find_element(By.XPATH, Locators.slide_view4).click()
-                    time.sleep(1)
                     if self.driver.find_element(By.XPATH, Locators.plateful_img1).is_displayed():
                         print("Plateful IMAGE is displayed on the intro_screen4")
                     else:
@@ -283,10 +268,10 @@ class Smoky:
 
 
             if  self.driver.find_element(By.XPATH,Locators.allow_camera).is_displayed():
-                print("Allow camera is displayed in the camera_access screen")
+                print("Allow PlatefulDev to take pictures and record video? is displayed in the camera_access screen")
                 try:
-                    ops_AllowCamera= self.driver.find_element(By.ID,Locators.allow_camera).text
-                    print(ops_AllowCamera)
+                    ops_AllowCamera= self.driver.find_element(By.XPATH,Locators.allow_camera).text
+                    (ops_AllowCamera.lower())
                     assert ops_AllowCamera == Plateful_Testdata.Allow_platefulDev
                 except:
                     print("Allow PlatefulDev to take pictures and record video? text not matching")
@@ -301,7 +286,7 @@ class Smoky:
                 try:
                     ops_AllowCameraalways= self.driver.find_element(By.ID,Locators.Allow_always).text
                     print(ops_AllowCameraalways)
-                    assert ops_AllowCameraalways == Plateful_Testdata.Allow_while
+                    assert ops_AllowCameraalways.lower() == Plateful_Testdata.Allow_while.lower()
                 except:
                     print("While using the app text not matching")
             else:
@@ -315,7 +300,7 @@ class Smoky:
                 try:
                     ops_AllowCameraonly= self.driver.find_element(By.ID,Locators.Allow_only).text
                     print(ops_AllowCameraonly)
-                    assert ops_AllowCameraonly == Plateful_Testdata.Allow_once
+                    assert ops_AllowCameraonly.lower() == Plateful_Testdata.Allow_once.lower()
                 except:
                     print("Only this time text not matching")
             else:
@@ -329,7 +314,7 @@ class Smoky:
                 try:
                     ops_Denycamera= self.driver.find_element(By.ID,Locators.restrict_camera).text
                     print(ops_Denycamera)
-                    assert ops_Denycamera == Plateful_Testdata.Dont_allow
+                    assert ops_Denycamera.lower() == Plateful_Testdata.Dont_allow.lower()
                     return True
                 except:
                     print("dont allow text not matching")
@@ -471,7 +456,6 @@ class Smoky:
                         More_text = self.driver.find_element(By.XPATH,Locators.More_Logo).text
                         print(More_text)
                         assert More_text == Plateful_Testdata.MoRe
-                        return True
                     else:
                         print("You are not in More page")
                         return False
@@ -479,10 +463,319 @@ class Smoky:
                     print("More button is not clickable")
             else:
                 print("More button is not displayed in the home screen")
+
+#Help
+
+            if  self.driver.find_element(By.XPATH,Locators.Help).is_displayed():
+                print("Help text is displayed in the more screen")
+                try:
+                    ops_Help= self.driver.find_element(By.XPATH,Locators.Help).text
+                    print(ops_Help)
+                    assert ops_Help == Plateful_Testdata.HeLp
+                except:
+                    print("Help Text not matching")
+
+                try:
+                    ops_welcomE = self.driver.find_element(By.XPATH,Locators.Welcome_to_plateful).text
+                    print(ops_welcomE)
+                    assert ops_welcomE == Plateful_Testdata.Welcome_To_Plateful
+                except:
+                    print("Welcome to Plateful Text not matching")
+
+                try:
+                    ops_howit= self.driver.find_element(By.XPATH,Locators.How_it).text
+                    print(ops_howit)
+                    assert ops_howit == Plateful_Testdata.How_It
+                except:
+                    print("How It Works Text not matching")
+
+                try:
+                    ops_frequent = self.driver.find_element(By.XPATH, Locators.Frequent).text
+                    print(ops_frequent)
+                    assert ops_frequent == Plateful_Testdata.FrequenT
+                except:
+                    print("Frequently Asked Questions Text not matching")
+
+                try:
+                    ops_contactus= self.driver.find_element(By.XPATH,Locators.Contact_us).text
+                    print(ops_contactus)
+                    assert ops_contactus == Plateful_Testdata.Contact_Us
+                except:
+                    print("Contact Us Text not matching")
+
+                try:
+                    ops_support= self.driver.find_element(By.XPATH,Locators.Support).text
+                    print(ops_support)
+                    assert ops_support == Plateful_Testdata.SupporT
+                except:
+                    print("Support Text not matching")
+
+            else:
+                print("Help is not displayed in the more page")
+                return False
+
+#DataPrivacy
+
+            if  self.driver.find_element(By.XPATH,Locators.Data_privacy).is_displayed():
+                print("Data Privacy is displayed in the more page")
+                try:
+                    ops_dataprivacy= self.driver.find_element(By.XPATH,Locators.Data_privacy).text
+                    print(ops_dataprivacy)
+                    assert ops_dataprivacy == Plateful_Testdata.Data_Privacy
+                except:
+                    print("Data Privacy Text not matching")
+
+                try:
+                    ops_termscondtions= self.driver.find_element(By.XPATH,Locators.terms_conditions).text
+                    print(ops_termscondtions)
+                    assert ops_termscondtions == Plateful_Testdata.Terms_Conditions
+                except:
+                    print("Data Privacy Text not matching")
+
+                try:
+                    ops_privacypolicy = self.driver.find_element(By.XPATH,Locators.Privacy_policy).text
+                    print(ops_privacypolicy)
+                    assert ops_privacypolicy == Plateful_Testdata.Privacy_Policy
+                except:
+                    print("Privacy Policy Text not matching")
+
+            else:
+                print("Privacy Policy is not displayed on the history page")
+                return False
+
+#Account
+
+            if  self.driver.find_element(By.XPATH,Locators.Account).is_displayed():
+                print("Account text displayed on the More page")
+                try:
+                    ops_Account= self.driver.find_element(By.XPATH,Locators.Account).text
+                    print(ops_Account)
+                    self.Scroller().press(x=520,y=1409).move_to(x=520,y=789).release().perform()
+                    assert ops_Account == Plateful_Testdata.Account
+                except:
+                    print("Account Text not matching in more page")
+            else:
+                print("SignIn Text is not displayed on the More page")
+                return False
+
+
+            if self.driver.find_element(By.XPATH, Locators.Sign_In).is_displayed():
+                    print("SignIn is displayed on the intro_screen")
+                    try:
+                        ops_SIGNin = self.driver.find_element(By.XPATH, Locators.Sign_In).text
+                        print(ops_SIGNin)
+                        assert ops_SIGNin == Plateful_Testdata.sign_IN
+                    except:
+                        print("SignIn Text not matching")
+            else:
+                    print("SignIn is not displayed on the intro_screen")
+                    return False
+
+#Welome to plateful Page navigation
+            #
+            if ((self.driver.find_element(By.XPATH, Locators.Welcome_to_plateful).is_displayed()) & (self.driver.find_element(By.XPATH, Locators.Welcome_to_plateful).is_enabled())):
+                try:
+                    self.driver.find_element(By.XPATH, Locators.Welcome_to_plateful).click()
+                    time.sleep(1)
+
+                    if self.driver.find_element(By.XPATH, Locators.join_the_nutrition).is_displayed():
+                        print("we landed in welcome to Plateful page ")
+                        time.sleep(2)
+                    else:
+                        print("We are not in welcome to plateful page")
+                        return False
+
+                    if self.driver.find_element(By.XPATH, Locators.Welome_cancel).is_displayed():
+                        try :
+                            self.driver.find_element(By.XPATH, Locators.Welome_cancel).click()
+                        except:
+                            print("Cancel button is not clickable in welcome to page")
+                    else:
+                        print("cancel button is not displayed in the welcome page")
+                except:
+                    print("Welcome to plateful page is not clickable")
+                    return False
+
+
+            if ((self.driver.find_element(By.XPATH, Locators.How_it).is_displayed()) & self.driver.find_element(By.XPATH, Locators.How_it).is_enabled()):
+                try:
+                    self.driver.find_element(By.XPATH, Locators.How_it).click()
+                    time.sleep(1)
+
+                    if self.driver.find_element(By.XPATH, Locators.plateful_swaps_fuzzy).is_displayed():
+                        print("we landed in How it works page ")
+                        time.sleep(2)
+                    else:
+                        print("we are not landed in how it works page ")
+                        return False
+
+                    if self.driver.find_element(By.XPATH, Locators.How_it_cancel).is_displayed():
+                        try:
+                            self.driver.find_element(By.XPATH, Locators.How_it_cancel).click()
+                        except:
+                            print("Cancel button is not clickable and not present in how it works page")
+                    else:
+                        print("cancel button is not displayed in the how it works page")
+
+                except:
+                    print("how it works page is not clickable")
+                    return False
+
+
+
+            if ((self.driver.find_element(By.XPATH, Locators.Frequent).is_displayed()) & self.driver.find_element(By.XPATH, Locators.Frequent).is_enabled()):
+                try:
+                    self.driver.find_element(By.XPATH, Locators.Frequent).click()
+                    time.sleep(1)
+
+                    if self.driver.find_element(By.XPATH, Locators.you_have_questions).is_displayed():
+                        print("we landed in Frequently asked questions page")
+                        time.sleep(2)
+                    else:
+                        print("we are not landed in frequently asked questions page")
+                        return False
+
+                    if self.driver.find_element(By.XPATH, Locators.Faq_done).is_displayed():
+                        try:
+                            self.driver.find_element(By.XPATH, Locators.Faq_done).click()
+                        except:
+                            print("Done button is not clickable and not present in Frequently asked questions page")
+                    else:
+                        print("Done button is not displayed in Frequently asked questions page")
+
+                except:
+                    print("Welcome to page is not clickable")
+                    return False
+
+
+
+            if ((self.driver.find_element(By.XPATH, Locators.Contact_us).is_displayed()) & self.driver.find_element(By.XPATH, Locators.Contact_us).is_enabled()):
+                try:
+                    self.driver.find_element(By.XPATH, Locators.Contact_us).click()
+                    time.sleep(1)
+                    if self.driver.find_element(By.XPATH, Locators.contact_fn).is_displayed():
+                        print("we landed in contact us page ")
+                        time.sleep(2)
+                    else:
+                        print("we are not landed in contact us page")
+                        return False
+
+                    if self.driver.find_element(By.XPATH, Locators.contact_cancel).is_displayed():
+                        try:
+                            self.driver.find_element(By.XPATH, Locators.contact_cancel).click()
+                        except:
+                            print("Cancel button is not clickable and not present in ContactUs page")
+                    else:
+                        print("cancel button is not displayed in the ContactUS page")
+
+                except:
+                    print("Contact us page is not clickable")
+                    return False
+
+
+
+            if ((self.driver.find_element(By.XPATH, Locators.Support).is_displayed()) & self.driver.find_element(By.XPATH, Locators.Support).is_enabled()):
+                try:
+                    self.driver.find_element(By.XPATH, Locators.Support).click()
+                    time.sleep(1)
+
+                    if self.driver.find_element(By.XPATH, Locators.support_page).is_displayed():
+                        print("we landed in Support Page")
+                        time.sleep(2)
+                    else:
+                        print("we are not landed in Support Page")
+                        return False
+
+                    if self.driver.find_element(By.XPATH, Locators.support_cancel).is_displayed():
+                        try:
+                            self.driver.find_element(By.XPATH, Locators.support_cancel).click()
+                        except:
+                            print("Cancel button is not clickable and not present in Support page")
+                    else:
+                        print("cancel button is not displayed in the Support page")
+
+                except:
+                    print("Support page is not clickable")
+                    return False
+
+
+            if ((self.driver.find_element(By.XPATH, Locators.terms_conditions).is_displayed()) & self.driver.find_element(By.XPATH, Locators.terms_conditions).is_enabled()):
+                try:
+                    self.driver.find_element(By.XPATH, Locators.terms_conditions).click()
+                    time.sleep(1)
+
+                    if self.driver.find_element(By.XPATH, Locators.TC_page).is_displayed():
+                        print("we landed in Terms And Conditions Page")
+                        time.sleep(2)
+                    else:
+                        print("we are not landed in Terms And Conditions Page")
+                        return False
+
+                    if self.driver.find_element(By.XPATH, Locators.TC_cancel).is_displayed():
+                        try:
+                            self.driver.find_element(By.XPATH, Locators.TC_cancel).click()
+                        except:
+                            print("Cancel button is not clickable and not present in Terms And Conditions page")
+                    else:
+                        print("cancel button is not displayed in the Terms And Conditions page")
+
+                except:
+                    print("Terms And Conditions page is not clickable")
+                    return False
+
+
+            if ((self.driver.find_element(By.XPATH, Locators.Privacy_policy).is_displayed()) & self.driver.find_element(By.XPATH, Locators.Privacy_policy).is_enabled()):
+                try:
+                    self.driver.find_element(By.XPATH, Locators.Privacy_policy).click()
+                    time.sleep(1)
+
+                    if self.driver.find_element(By.XPATH, Locators.privacypolicy_page).is_displayed():
+                        print("we landed in Privacy Policy page")
+                        time.sleep(2)
+                    else:
+                        print("We are not landed in Privacy Policy Page")
+                        return False
+
+                    if self.driver.find_element(By.XPATH, Locators.privacypolicy_cancel).is_displayed():
+                        try:
+                            self.driver.find_element(By.XPATH, Locators.privacypolicy_cancel).click()
+                            print("cancel button is working ")
+                            time.sleep(3)
+                            self.Scroller().press(x=524, y=1409).move_to(x=524, y=788).release().perform()
+                            time.sleep(3)
+                            return True
+                        except:
+                            print("Cancel button is not clickable and not present in Privacy Policy page")
+                    else:
+                        print("cancel button is not displayed in the Privacy Policy page")
+
+                except:
+                    print("Privacy Policy page is not clickable")
+                    return False
         except:
             print("exception occured")
 
 
+
+    def Verify_SigningPage(self):
+
+        try:
+            if (self.driver.find_element(By.XPATH,Locators.Sign_In).is_displayed()):
+                print("SignIn is Displayed in the more page")
+                try:
+                    self.driver.find_element(By.XPATH,Locators.Sign_In).click()
+                    if self.driver.find_element(By.XPATH,Locators.PlateFul_Logo).is_displayed():
+                        print("We are in Plateful Signing Page")
+                        return True
+                    else:
+                        print("We are Not in Plateful Signing Page")
+                        return False
+                except:
+                    print("Exception occured while clicking on Signin buttom")
+            else:
+                print("Sign in not displayed in the home screen")
+        except:
+            print("Exception occured")
 
 
 

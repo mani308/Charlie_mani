@@ -1,7 +1,7 @@
 import time
 from appium import webdriver
 import pytest
-
+from appium.webdriver.common.touch_action import TouchAction
 @pytest.fixture(scope='class')
 def setup(request):
   desired_cap = {

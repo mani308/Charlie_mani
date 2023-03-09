@@ -36,3 +36,16 @@
 #
 #
 
+s1="apple"
+s2="ApPlE"
+
+if s1.__eq__(s2):
+    print("good to go")
+else:
+    print("quit")
+
+
+
+
+
+

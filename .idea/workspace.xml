@@ -6,11 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="7befc37e-175d-426d-9652-5e00ba481d65" name="Changes" comment="March_3_11:08">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mob_Auto/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mob_Auto/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Opsis_Plateful/Ops_Elements/Locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/Ops_Elements/Locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Opsis_Plateful/Ops_Info/Plateful_Testdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/Ops_Info/Plateful_Testdata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Opsis_Plateful/Test_Build.py" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/Test_Build.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Opsis_Plateful/Test_cases/Smoke_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/Test_cases/Smoke_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Opsis_Plateful/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Opsis_Plateful/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Opsis_Plateful/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Opsis_Plateful/pytest_html_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/pytest_html_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_Mentor/Bas1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Mentor/Bas1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,25 +44,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/manikanta/PycharmProjects/pythonProject_info",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/manikanta/PycharmProjects/pythonProject_info&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Mob_Auto" />
       <recent name="$PROJECT_DIR$/Opsis_Plateful/Test_cases" />
       <recent name="$PROJECT_DIR$/Opsys_Plateful/Ops_Elements" />
       <recent name="$PROJECT_DIR$/Opsys_Plateful" />
       <recent name="$PROJECT_DIR$/Opsys_Plateful/Opsys_testdata" />
-      <recent name="$PROJECT_DIR$/Mob_Auto" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests for Test_Build.Test_block">
-    <configuration name="P1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Bas1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Killam_Mani" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,17 +70,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Alpha_pk1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Mentor" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Alpha_pk1/P1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Mentor/Bas1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Demo1_signin.test_DEmo1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Killam_Mani" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mob_Auto" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Demo1_signin.test_DEmo1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for Test_Build.Test_block" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -91,7 +111,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Test_Build.Test_block.test_verify_Homepage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for Test_Build.Test_block.test_verify_morepage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Killam_Mani" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,45 +121,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Test_Build.Test_block.test_verify_Homepage&quot;" />
+      <option name="_new_target" value="&quot;Test_Build.Test_block.test_verify_morepage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in Test_Build.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in Demo1_signin.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Killam_Mani" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Opsis_Plateful" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mob_Auto" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Opsis_Plateful/Test_Build.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_gally.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Killam_Mani" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Alpha_pk1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Alpha_pk1/test_gally.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Mob_Auto/Demo1_signin.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for Test_Build.Test_block" />
-        <item itemvalue="Python tests.Python tests for Test_Build.Test_block.test_verify_Homepage" />
-        <item itemvalue="Python tests.Python tests in Test_Build.py" />
-        <item itemvalue="Python tests.Python tests in test_gally.py" />
-        <item itemvalue="Python.P1" />
+        <item itemvalue="Python.Bas1" />
+        <item itemvalue="Python tests.Python tests for Demo1_signin.test_DEmo1" />
+        <item itemvalue="Python tests.Python tests in Demo1_signin.py" />
+        <item itemvalue="Python tests.Python tests for Test_Build.Test_block.test_verify_morepage" />
       </list>
     </recent_temporary>
   </component>
