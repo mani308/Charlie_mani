@@ -1,0 +1,6 @@
+welcome note is displayed on the introscreen1
+Welcome to
+Plateful IMAGE is displayed on the intro_screen1
+Health eating note is displayed on the intro_screen1
+Healthy eating made easy.
+exception occured in Intro pages

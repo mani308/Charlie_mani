@@ -1,5 +1,7 @@
 import pytest
 from Opsis_Plateful.Test_cases.Smoke_test import Smoky
+import allure
+
 @pytest.mark.usefixtures("setup")
 class Test_block:
     @pytest.fixture(autouse = True)

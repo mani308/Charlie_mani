@@ -1,10 +1,12 @@
 import time
 
+from allure_commons.types import AttachmentType
 from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.common.by import By
 from Opsis_Plateful.Ops_Info import Plateful_Testdata
 from Opsis_Plateful.Ops_Elements import Locators
 
+import allure
 class Smoky:
     def __init__(self , driver):
         self.driver = driver
@@ -43,11 +45,11 @@ class Smoky:
                     print(ops_health)
                     assert ops_health == Plateful_Testdata.Healthy
                 except:
+                    allure.attach(self.driver.get_screenshot_as_png(),name="Healthy text is wrong",attachment_type=AttachmentType.PNG)
                     print("Healthy eating made easy. Text not matching")
             else:
                 print("Healthy eating made easy element not displayed on the intro_screen1")
                 return False
-
 
 
 

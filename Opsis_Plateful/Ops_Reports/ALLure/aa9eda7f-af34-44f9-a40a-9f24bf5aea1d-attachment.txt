@@ -1,0 +1,24 @@
+More
+Help text is displayed in the more screen
+Help
+Welcome to Plateful
+How It Works
+Frequently Asked Questions
+Contact Us
+Support
+Data Privacy is displayed in the more page
+Data Privacy
+Terms & Conditions
+Privacy Policy
+Account text displayed on the More page
+Account
+SignIn is displayed on the intro_screen
+Sign In
+we landed in welcome to Plateful page 
+we landed in How it works page 
+we landed in Frequently asked questions page
+we landed in contact us page 
+we landed in Support Page
+we landed in Terms And Conditions Page
+we landed in Privacy Policy page
+cancel button is working 

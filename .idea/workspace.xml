@@ -6,16 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="7befc37e-175d-426d-9652-5e00ba481d65" name="Changes" comment="March_3_11:08">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mob_Auto/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mob_Auto/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Opsis_Plateful/Ops_Elements/Locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/Ops_Elements/Locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha_pk1/Alpha.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha_pk1/Alpha.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha_pk1/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha_pk1/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha_pk1/pdf/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha_pk1/pdf/p1/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha_pk1/pdf/p1/pytest_html_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha_pk1/pdf/p2/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha_pk1/pdf/p2/pytest_html_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha_pk1/pdf/pytest_html_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alpha_pk1/pytest_html_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Alpha_pk1/pytest_html_report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Opsis_Plateful/Ops_Info/Plateful_Testdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/Ops_Info/Plateful_Testdata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Opsis_Plateful/Test_Build.py" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/Test_Build.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Opsis_Plateful/Test_cases/Smoke_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/Test_cases/Smoke_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Opsis_Plateful/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Opsis_Plateful/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Opsis_Plateful/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/pytest.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Opsis_Plateful/pytest_html_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Opsis_Plateful/pytest_html_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_Mentor/Bas1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Mentor/Bas1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

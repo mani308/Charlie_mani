@@ -1,0 +1,8 @@
+Camcorder_logo is displayed 
+Allow PlatefulDev to take pictures and record video? is displayed in the camera_access screen
+While using the app is displayed in the camera_access screen
+While using the app
+Only this time is displayed in the camera_access screen
+Only this time
+Dont allow is displayed in the camera_access screen
+Don’t allow

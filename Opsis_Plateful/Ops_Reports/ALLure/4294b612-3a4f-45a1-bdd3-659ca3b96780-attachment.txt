@@ -1,0 +1,10 @@
+you are in History Page
+Food is displayed on the history page
+
+FOOD
+NUTRITION VALUE is displayed in the history page
+NUTRITION
+VALUE
+ECO VALUE is displayed in the history page
+ECO
+VALUE

@@ -1,0 +1,8 @@
+you are in landing page
+Plate text is present in the scanning page
+PLATE
+BARCODE
+Flash light button is displayed in the Scan page
+History and more txt is displayed in the scanning page
+History
+More
